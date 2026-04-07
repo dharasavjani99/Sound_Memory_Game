@@ -1,0 +1,25 @@
+<html lang="en">
+    <head>
+        <title>Select Difficulty</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1>Color Memory Game</h1>
+            <h2>Select Difficulty</h2>
+
+            <button class="btn easy" onclick="startGame('easy')">Easy</button>
+            <button class="btn medium" onclick="startGame('medium')">Medium</button>
+            <button class="btn hard" onclick="startGame('hard')">Hard</button>
+        </div>
+
+        <script>
+            function startGame(mode) {
+                window.location.href = mode + ".html";
+            }
+        </script>
+
+    </body>
+</html>

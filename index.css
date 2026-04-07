@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: hsl(64, 81%, 80%);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    width: 250px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.easy {
+    background: #4caf50;
+}
+
+.medium {
+    background: #ff9800;
+}
+
+.hard {
+    background: #f44336;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+}
+
+.game-grid {
+    width: 320px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.red { background: #ff4c4c; }
+.green { background: #4cff4c; }
+.blue { background: #4c6fff; }
+.yellow { background: #ffd84c; }
+
+.box.active {
+    box-shadow: 0 0 30px white;
+    transform: scale(1.1);
+}
+
+/* Game Over Screen */
+.hidden {
+    display: none;
+}
+
+#gameOverScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.game-over-box {
+    background: #222;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px red;
+}
+
+#restart {
+    padding: 10px 20px;
+    border: none;
+    background: #ff4c4c;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    border: none;
+    background: #4c6fff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#back:hover, #restart:hover {
+    background: #ff1a1a;
+}

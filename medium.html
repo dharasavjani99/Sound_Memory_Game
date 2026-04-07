@@ -1,0 +1,41 @@
+<html lang="en">
+    <head>
+        <title>Medium Mode</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1>Medium Mode</h1>
+            <h2 id="status">Press Start</h2>
+            <button id="start">Start Game</button>
+            <div class="game-grid">
+                <div class="box red" id="red"></div>
+                <div class="box green" id="green"></div>
+                <div class="box blue" id="blue"></div>
+                <div class="box yellow" id="yellow"></div>
+            </div>
+            <h3 id="score">High Score: 0</h3>
+        </div>
+
+        <div id="gameOverScreen" class="hidden">
+            <div class="game-over-box">
+                <h1> Game Over</h1>
+                <h2 id="finalScore"></h2>
+                <button id="restart">Play Again</button>
+            </div>
+        </div>
+
+        <button id="back" onclick="window.location.href='index.html'">Back to Menu</button>
+        
+        <audio id="redSound" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+        <audio id="greenSound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+        <audio id="blueSound" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+        <audio id="yellowSound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="medium.js"></script>
+
+    </body>
+</html>
